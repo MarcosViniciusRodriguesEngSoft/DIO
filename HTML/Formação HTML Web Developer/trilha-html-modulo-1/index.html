@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+
+   <!-- Título Principal -->
+   <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+   <hr />
+
+   <!-- ÍNDICE -->
+   <h2>Índice</h2>
+   <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são
+      sugestões.</p>
+   <ul>
+      <!-- Utilizando âncoras para navegar na própria página -->
+      <li><a href="#historia">História dos computadores</a></li>
+      <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+      <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+      <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+      <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+      <li><a href="#referencias">Links de referências</a></li>
+   </ul>
+
+   <!-- SEÇÃO 1: HISTÓRIA -->
+   <h2 id="historia">História dos computadores</h2>
+   <p>O primeiro computador eletrônico digital foi o <strong>ENIAC</strong>, criado em 1946. Ele era gigantesco e
+      ocupava uma sala inteira. Desde então, a evolução foi exponencial, passando por mainframes, computadores pessoais
+      e chegando aos smartphones que temos hoje.</p>
+   <p>Para saber mais, você pode acessar a <a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o"
+         target="_blank">Wikipédia</a>.</p>
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <!-- SEÇÃO 2: CLIENTS -->
+   <h2 id="clients">O que são <i>Clients</i>?</h2>
+   <p>O <strong>Client</strong> (Cliente) é a parte do sistema que faz requisições. Quando você acessa um site pelo seu
+      navegador (Chrome, Firefox, Edge), o seu computador está agindo como um cliente. Ele solicita as informações e as
+      exibe para você.</p>
+   <p>Exemplos de clientes: <mark>Navegadores web</mark>, aplicativos de celular e programas de e-mail.</p>
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <!-- SEÇÃO 3: SERVERS -->
+   <h2 id="servers">O que são <i>Servers</i>?</h2>
+   <p>O <strong>Server</strong> (Servidor) é um computador ou sistema que armazena os dados e responde às requisições
+      feitas pelos clientes. Ele "serve" a informação que o cliente pediu.</p>
+   <p>Quando você digita um endereço no navegador, a requisição viaja pela internet até o servidor, que processa e
+      devolve os arquivos HTML, CSS e imagens. <del>Servidores são apenas computadores velhos</del> (isso é um mito,
+      eles são otimizados para alta performance).</p>
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <!-- SEÇÃO 4: ESTRUTURA HTML -->
+   <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+   <p>A estrutura básica é composta por:</p>
+   <ol>
+      <li><strong>&lt;!DOCTYPE html&gt;</strong>: Informa ao navegador que é um documento HTML5.</li>
+      <li><strong>&lt;html&gt;</strong>: O elemento raiz.</li>
+      <li><strong>&lt;head&gt;</strong>: Contém metadados, título e links para CSS.</li>
+      <li><strong>&lt;body&gt;</strong>: Onde fica todo o conteúdo visível da página.</li>
+   </ol>
+   <p>Fórmulas químicas como a da água (H<sub>2</sub>O) e potências matemáticas (10<sup>2</sup>) são exemplos de uso das
+      tags <strong>sub</strong> e <strong>sup</strong>.</p>
+   <blockquote>
+      "A melhor maneira de prever o futuro é inventá-lo." - Alan Kay
+   </blockquote>
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <!-- SEÇÃO 5: LISTAS -->
+   <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+   <p>A principal diferença está na semântica e na exibição:</p>
+   <ul>
+      <li><strong>Listas Não Ordenadas (&lt;ul&gt;)</strong>: Usadas quando a ordem dos itens não importa. Exibem
+         marcadores (bolinhas).</li>
+      <li><strong>Listas Ordenadas (&lt;ol&gt;)</strong>: Usadas quando a ordem importa (como um passo a passo). Exibem
+         números.</li>
+   </ul>
+   <p>Exemplo de lista ordenada: Passos para criar um arquivo HTML:</p>
+   <ol>
+      <li>Abrir o VS Code</li>
+      <li>Criar um arquivo com extensão .html</li>
+      <li>Escrever o código</li>
+   </ol>
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <!-- SEÇÃO 6: REFERÊNCIAS -->
+   <h2 id="referencias">Links de referências</h2>
+   <p>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra
+      aba/janela do navegador (usando <strong>target="_blank"</strong>).</p>
+   <ul>
+      <li><a href="http://dio.me" target="_blank">DIO.me</a></li>
+      <li><a href="http://w3c.org" target="_blank">W3C.org</a></li>
+      <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a></li>
+   </ul>
+
+   <!-- Exemplo de uso da tag <font> (obsoleta no HTML5, mas solicitada no desafio) -->
+   <p>
+      <font color="red" face="Arial" size="2">Esta tag &lt;font&gt; foi muito usada no passado, mas hoje é considerada
+         obsoleta e deve ser substituída por CSS.</font>
+   </p>
+
+   <!-- Exemplo de uso da tag <abbr> -->
+   <p>O <abbr title="HyperText Markup Language">HTML</abbr> é a linguagem de marcação padrão para criar páginas web.</p>
+
+   <p><a href="#inicio"><small>Voltar ao índice</small></a></p>
+
+   <hr />
+   <center><small>Desafio de Projeto - Trilha HTML Módulo I - DIO</small></center>
+
+</body>
+
+</html>
