@@ -7,7 +7,8 @@ Aqui estão organizados todos os desafios de projeto e anotações das formaçõ
 
 | Formação | Status | Link do Projeto |
 | :--- | :---: | :--- |
-| **HTML Web Developer** | 🟡 Em andamento | [Acessar Projeto](./HTML-Web-Developer/) |
+| **Trilha de CSS** | 🟢 Concluído | [Acessar Projeto](./CSS/) |
+| **HTML Web Developer** | 🟡 Em andamento | [Acessar Projeto](./HTML/) |
 | **Java Developer** | 🔴 Não iniciado | [Acessar Projeto](./JAVA/) |
 
 ## 🛠️ Tecnologias Estudadas
@@ -23,6 +24,12 @@ Aqui estão organizados todos os desafios de projeto e anotações das formaçõ
 - Cada pasta na raiz representa uma **Formação**.
 - Dentro de cada formação, existem pastas para cada **Módulo/Desafio**.
 - Cada projeto possui seu próprio `README.md` explicando o que foi desenvolvido.
+
+---
+
+### 🚀 Projetos em Destaque
+
+- **[Clone da Página do YouTube com Flexbox](./CSS/trilha-css-desafio-02/)**: Recriação da interface de reprodução de vídeo do YouTube utilizando HTML5 e CSS3, com foco em Flexbox, posicionamento e responsividade.
 
 ---
 Feito com 💙 por [Marcos Vinicius](https://github.com/MarcosViniciusRodriguesEngSoft)
