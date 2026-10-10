@@ -3,7 +3,6 @@
 Bem-vindo(a) ao quarto desafio da Trilha de CSS da DIO! Neste desafio, você vai colocar a mão na massa e construir a página inicial do Discord, colocando em prática todos os conceitos aprendidos, principalmente sobre **Responsividade no CSS**.
 
 ![Banner Desktop](assets/banner/banner-web.png)
-![Banner Mobile](assets/banner/banner-mobile.png)
 
 ## 📝 Sobre o Desafio
 
@@ -20,11 +19,3 @@ Este projeto foi construído **do zero**, desde a estrutura HTML até a estiliza
 [Link do Figma](https://www.figma.com/design/NRBYrG5d4DSzObv7dpTqoM/Desafio-Responsividade---DIO?node-id=1-56&t=FUPXRiQ9UyWwd8jh-0) contendo o protótipo do desafio para que você possa se basear.
 
 *Observações: para aplicar os textos em gradiente, utilize a propriedade CSS `background-clip`, porém, para funcionar em alguns navegadores, é necessário utilizar a propriedade `-webkit-background-clip: text;`*
-
-## 🚀 Resultado Final
-
-### Versão Desktop
-![Preview Desktop](assets/banner/banner-web.png)
-
-### Versão Mobile
-![Preview Mobile](assets/banner/banner-mobile.png)
