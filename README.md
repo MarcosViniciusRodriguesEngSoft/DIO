@@ -8,8 +8,8 @@ Aqui estão organizados todos os desafios de projeto e anotações das formaçõ
 | Formação | Status | Link do Projeto |
 | :--- | :---: | :--- |
 | **Trilha de CSS** | 🟢 Concluído | [Acessar Projeto](./CSS/) |
-| **HTML Web Developer** | 🟡 Em andamento | [Acessar Projeto](./HTML/) |
-| **Java Developer** | 🔴 Não iniciado | [Acessar Projeto](./JAVA/) |
+| **HTML Web Developer** | 🟢 Concluído | [Acessar Projeto](./HTML/) |
+| **Java Developer** | 🟡 Em andamento | [Acessar Projeto](./JAVA/) |
 
 ## 🛠️ Tecnologias Estudadas
 
