@@ -1,0 +1,246 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #3366cc;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+a {
+    color: #3366cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover, a:focus {
+    color: #1a4a8a;
+    text-decoration: underline;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+}
+
+header[role="banner"] {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaecf0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-weight: 600;
+    color: #54595d;
+}
+.main-nav a:hover {
+    color: #3366cc;
+}
+
+.content {
+    max-width: 1440px;
+    margin: 20px auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding: 0 1.5rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid #eaecf0;
+    padding-right: 15px;
+}
+.sidebar h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #72777d;
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar a[aria-current="page"] {
+    font-weight: bold;
+    color: #202122;
+    border-left: 3px solid #3366cc;
+    padding-left: 8px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #eaecf0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.article-header h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    font-family: 'Linux Libertine', Georgia, Times, serif;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #54595d;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Linux Libertine', Georgia, Times, serif;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.main ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+.main ul li {
+    margin-bottom: 8px;
+}
+
+figure {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #c8ccd1;
+    border-radius: 4px;
+}
+figcaption {
+    font-size: 0.85rem;
+    color: #54595d;
+    margin-top: 10px;
+}
+
+details {
+    background-color: #f8f9fa;
+    border: 1px solid #eaecf0;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #3366cc;
+}
+summary:hover {
+    color: #1a4a8a;
+}
+details p {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #3366cc;
+}
+
+.anchors {
+    grid-area: anchors;
+    border-left: 1px solid #eaecf0;
+    padding-left: 15px;
+}
+.anchors h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #72777d;
+    border-bottom: 1px solid #eaecf0;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+.anchors ul {
+    list-style: none;
+    padding: 0;
+}
+.anchors ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: 1px solid #eaecf0;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #72777d;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        grid-template-areas: 
+            "main"
+            "sidebar"
+            "anchors";
+        grid-template-columns: 1fr;
+    }
+    .sidebar, .anchors {
+        border: none;
+        padding: 0;
+        border-top: 1px solid #eaecf0;
+        padding-top: 20px;
+    }
+    header[role="banner"] {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
