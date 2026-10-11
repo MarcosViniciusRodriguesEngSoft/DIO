@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de login da HBO Max. Entre com sua conta para assistir séries e filmes." />
+    <link rel="stylesheet" href="assets/css/signIn.css" />
+    <title>Entrar | HBO Max</title>
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="index.html" class="menu__logo" aria-label="Página inicial HBO Max">
+          <img
+            src="assets/images/hbo-logo.svg"
+            alt="Logotipo HBO Max com o nome da marca"
+            class="menu__logo-image"
+          />
+        </a>
+        <div class="menu__links">
+          <a href="signIn.html" class="menu__item" aria-current="page">Entrar</a>
+          <a
+            href="#subscription"
+            class="menu__item menu__item--button button"
+            aria-label="Assinar agora um plano HBO Max"
+          >
+            Assine Agora
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="content">
+      <form class="login container" aria-labelledby="login-title">
+        <h1 id="login-title" class="login__title">Entrar</h1>
+
+        <label class="login__label" for="email">
+          Você tem uma conta da HBO Max?
+        </label>
+        <input
+          class="login__field"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Endereço de e-mail"
+          autocomplete="email"
+          required
+        />
+
+        <label class="login__label" for="password">Senha</label>
+        <input
+          class="login__field"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+          minlength="8"
+          autocomplete="current-password"
+          required
+        />
+
+        <div class="login__actions">
+          <button type="submit" class="button button--gradient">Entrar</button>
+          <a href="#" class="login__link">Esqueceu a senha?</a>
+        </div>
+      </form>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer container">
+      <nav aria-label="Links do rodapé">
+        <ul class="footer__links" role="list">
+          <li>
+            <a class="footer__link" href="https://www.hbomax.com/br/pt/sitemap">
+              Agora na HBO Max
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://www.hbomax.com/br/pt/coming-soon">
+              Em breve
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://www.hbomax.com/br/pt/feature">
+              Filme em destaque
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://www.hbomax.com/br/pt/series">
+              Séries
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://help.hbomax.com/br">Ajuda</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="text--small footer__legal">
+        © 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos
+        reservados. HBO Max é usado sob licença.
+      </p>
+
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/HBOMaxBr/"
+          class="footer__social-link"
+          aria-label="Facebook da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/fb_0.png" alt="Ícone Facebook" />
+        </a>
+        <a
+          href="https://twitter.com/HBOMaxBR"
+          class="footer__social-link"
+          aria-label="Twitter da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/twitter_0.png" alt="Ícone Twitter" />
+        </a>
+        <a
+          href="https://www.instagram.com/hbomaxbr/"
+          class="footer__social-link"
+          aria-label="Instagram da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/instagram_0.png" alt="Ícone Instagram" />
+        </a>
+        <a
+          href="https://www.youtube.com/c/hbomaxbr"
+          class="footer__social-link"
+          aria-label="Canal do YouTube da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/youtube_0.png" alt="Ícone YouTube" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

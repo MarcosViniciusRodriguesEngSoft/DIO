@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clone da página da HBO Max com animações em HTML e CSS. Projeto de estudo da Trilha de CSS da DIO."
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <title>HBO Max | Curta as melhores histórias</title>
+  </head>
+  <body>
+    <!-- ===== HEADER (Menu de Navegação) ===== -->
+    <header class="header">
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="index.html" class="menu__logo" aria-label="Página inicial HBO Max">
+          <img
+            src="assets/images/hbo-logo.svg"
+            alt="Logotipo HBO Max com o nome da marca"
+            class="menu__logo-image"
+          />
+        </a>
+        <div class="menu__links">
+          <a href="signIn.html" class="menu__item">Entrar</a>
+          <a
+            href="#subscription"
+            class="menu__item menu__item--button button"
+            aria-label="Assinar agora um plano HBO Max"
+          >
+            Assine Agora
+          </a>
+        </div>
+      </nav>
+
+      <!-- Hero Section (Chamada Principal) -->
+      <div class="header__content">
+        <div class="header__channels" aria-label="Canais disponíveis">
+          <img class="header__channel" src="assets/images/hbo.png" alt="HBO" />
+          <img class="header__channel" src="assets/images/dc.png" alt="DC Comics" />
+          <img
+            class="header__channel"
+            src="assets/images/wb.png"
+            alt="Warner Bros"
+          />
+          <img
+            class="header__channel"
+            src="assets/images/cartoon-network_neutral.png"
+            alt="Cartoon Network"
+          />
+          <img
+            class="header__channel"
+            src="assets/images/max_originals.png"
+            alt="Max Originals"
+          />
+        </div>
+
+        <h1 class="header__title">
+          <span class="header__title--light">Curta as melhores histórias</span>
+          Para todo mundo
+        </h1>
+
+        <div class="divider" role="separator"></div>
+
+        <!-- Oferta de preço -->
+        <section class="offer" aria-label="Oferta de assinatura">
+          <p>Assinaturas a partir de</p>
+          <p class="offer__price">
+            R$14,15 <span class="offer__price--small">/mês*</span>
+          </p>
+        </section>
+
+        <a
+          href="#subscription"
+          class="button button--gradient header__button"
+          aria-label="Assinar agora a partir de 14 reais e 15 centavos por mês"
+        >
+          Assine agora
+        </a>
+        <p class="text--small">
+          *aplicável ao plano anual com o pagamento antecipado.
+        </p>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- Seção de Planos de Assinatura -->
+      <section id="subscription" class="subscription" aria-labelledby="plans-title">
+        <div class="container">
+          <h2 id="plans-title" class="title">
+            Conheça nossos planos e economize na assinatura trimestral ou anual
+            com o pagamento antecipado.
+          </h2>
+
+          <!-- Lista de Planos -->
+          <ul class="subscription__plans" role="list">
+            <!-- Plano Mobile -->
+            <li class="subscription__card">
+              <div class="subscription__card-content">
+                <div class="subscription__plan">
+                  <h3>Mobile</h3>
+                  <p class="subscription__price">
+                    R$ 19,90 <span class="text--small">/mês</span>
+                  </p>
+                </div>
+                <ul class="subscription__goals">
+                  <li class="subscription__description">
+                    Aproveite em smartphones e tablets, onde quiser.
+                  </li>
+                  <li class="subscription__description">
+                    Assista em 1 tela por vez.
+                  </li>
+                  <li class="subscription__description">
+                    Tenha conteúdo em resolução adaptada para cada dispositivo.
+                  </li>
+                  <li class="subscription__description">
+                    Baixe suas séries e filmes favoritos, assista onde e quando
+                    quiser.
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="button button--gradient"
+                aria-label="Escolher o Plano Mobile por 19 reais e 90 centavos ao mês"
+              >
+                Escolher o Plano Mobile
+              </button>
+            </li>
+
+            <!-- Plano Multitelas -->
+            <li class="subscription__card">
+              <div class="subscription__card-content">
+                <div class="subscription__plan">
+                  <h3>Multitelas</h3>
+                  <p class="subscription__price">
+                    R$ 27,90 <span class="text--small">/mês</span>
+                  </p>
+                </div>
+                <ul class="subscription__goals">
+                  <li class="subscription__description">
+                    Aproveite em todos os seus dispositivos.
+                  </li>
+                  <li class="subscription__description">
+                    Chromecast e Airplay disponíveis.
+                  </li>
+                  <li class="subscription__description">
+                    Assista em até 3 telas ao mesmo tempo.
+                  </li>
+                  <li class="subscription__description">
+                    Tenha conteúdo em alta definição, com qualidade 4K.
+                  </li>
+                  <li class="subscription__description">
+                    Baixe suas séries e filmes favoritos, assista onde e quando
+                    quiser.
+                  </li>
+                  <li class="subscription__description">
+                    Crie até 5 perfis diferentes.
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="button button--gradient"
+                aria-label="Escolher o Plano Multitelas por 27 reais e 90 centavos ao mês"
+              >
+                Escolher o Plano Multitelas
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Seção de Conteúdos (Filmes e Séries) -->
+      <section
+        id="contents"
+        class="contents container"
+        aria-labelledby="contents-title"
+      >
+        <h2 id="contents-title" class="title">Descubra novos universos</h2>
+        <div class="contents__container">
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/hbo-default_0.webp"
+              alt="Séries e filmes originais HBO"
+            />
+          </article>
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/MAX-Default.webp"
+              alt="Conteúdos originais Max Originals"
+            />
+          </article>
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/DC_Default.webp"
+              alt="Universo de super-heróis DC Comics"
+            />
+          </article>
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/WB-Default.webp"
+              alt="Filmes clássicos Warner Bros"
+            />
+          </article>
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/CN-Default.webp"
+              alt="Desenhos e animações Cartoon Network"
+            />
+          </article>
+          <article class="contents__card">
+            <img
+              class="contents__image"
+              src="assets/images/UCL-Default.webp"
+              alt="UEFA Champions League - Futebol europeu"
+            />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer container">
+      <nav aria-label="Links do rodapé">
+        <ul class="footer__links" role="list">
+          <li>
+            <a
+              class="footer__link"
+              href="https://www.hbomax.com/br/pt/sitemap"
+            >
+              Agora na HBO Max
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer__link"
+              href="https://www.hbomax.com/br/pt/coming-soon"
+            >
+              Em breve
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer__link"
+              href="https://www.hbomax.com/br/pt/feature"
+            >
+              Filme em destaque
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="https://www.hbomax.com/br/pt/series"
+              >Séries</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://help.hbomax.com/br">Ajuda</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="text--small footer__legal">
+        © 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos
+        reservados. HBO Max é usado sob licença.
+      </p>
+
+      <div class="footer__social">
+        <a
+          href="https://www.facebook.com/HBOMaxBr/"
+          class="footer__social-link"
+          aria-label="Facebook da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/fb_0.png" alt="Ícone Facebook" />
+        </a>
+        <a
+          href="https://twitter.com/HBOMaxBR"
+          class="footer__social-link"
+          aria-label="Twitter da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/twitter_0.png" alt="Ícone Twitter" />
+        </a>
+        <a
+          href="https://www.instagram.com/hbomaxbr/"
+          class="footer__social-link"
+          aria-label="Instagram da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/instagram_0.png" alt="Ícone Instagram" />
+        </a>
+        <a
+          href="https://www.youtube.com/c/hbomaxbr"
+          class="footer__social-link"
+          aria-label="Canal do YouTube da HBO Max"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/images/youtube_0.png" alt="Ícone YouTube" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
